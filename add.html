@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Job Application Tracker</h1>
+
+      <div>
+        <a href="index.html">Dashboard</a>
+        <a href="add.html">Add Application</a>
+        <a href="applications.html">Applications</a>
+      </div>
+    </nav>
+
+    <main>
+      <h2>Add New Application</h2>
+
+      <form id="applicationForm">
+        <input type="text" id="company" placeholder="Company Name" />
+
+        <input type="text" id="role" placeholder="Job Role" />
+
+        <input type="text" id="location" placeholder="Location" />
+
+        <input type="number" id="salary" placeholder="Salary" />
+
+        <label>Apply Date</label>
+        <input type="date" id="applyDate" />
+
+        <label>Interview Date</label>
+        <input type="date" id="interviewDate" />
+
+        <select id="status">
+          <option value="Applied">Applied</option>
+          <option value="Interview">Interview</option>
+          <option value="Selected">Selected</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+
+        <select id="priority">
+          <option value="High">High Priority</option>
+          <option value="Medium">Medium Priority</option>
+          <option value="Low">Low Priority</option>
+        </select>
+
+        <textarea id="notes" rows="5" placeholder="Notes"></textarea>
+
+        <button type="submit">Save Application</button>
+      </form>
+    </main>
+
+    <script src="add.js"></script>
+  </body>
+</html>

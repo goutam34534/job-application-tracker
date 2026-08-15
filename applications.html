@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applications</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Job Application Tracker</h1>
+
+      <div>
+        <a href="index.html">Dashboard</a>
+        <a href="add.html">Add Application</a>
+        <a href="applications.html">Applications</a>
+      </div>
+    </nav>
+
+    <main>
+      <h2>All Applications</h2>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by company or role"
+      />
+
+      <select id="statusFilter">
+        <option value="All">All</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <div id="applicationsContainer"></div>
+    </main>
+
+    <script src="application.js"></script>
+  </body>
+</html>
