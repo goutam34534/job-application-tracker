@@ -28,6 +28,11 @@ displayApplications(applications);
 function displayApplications(list) {
   applicationsContainer.innerHTML = "";
 
+  if (list.length === 0) {
+    applicationsContainer.innerHTML = `<p>No result found</p>`;
+    return;
+  }
+
   list.forEach(function (application) {
     applicationsContainer.innerHTML += `
         <div class="card">
